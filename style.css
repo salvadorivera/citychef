@@ -1,0 +1,242 @@
+@font-face{
+    font-family: "FreightSansProSemibold-Regular";
+    src: url("./fonts/FreightSansProSemibold-Regular.otf");
+
+    font-family: "FreightSansProBook-Regular";
+    src: url("./fonts/FreightSansProBook-Regular.otf");
+
+    font-family: "FreightDispProSemibold-Regular";
+    src: url("./fonts/FreightDispProSemibold-Regular.otf");
+
+    font-family: "FreightDispProSemibold-Italic";
+    src: url("./fonts/FreightDispProSemibold-Italic.otf");
+
+
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+margin: 0;
+font-size: 1rem;
+font-family: "FreightSansProBook-Regular"
+}
+
+header{
+    background-color: rgb(24, 34, 59);
+    height: 75px;
+    font-family: "FreightSansProBook-Regular";
+}
+
+.container{
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-nav,
+.logo-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container{
+    height: 75px;
+    min-width: 100px;
+    max-width: 125px;
+    /*border: 1px solid magenta;*/
+    }
+
+.btn-home{
+    /*border: 1px solid green;*/
+    padding: 2px;
+}
+
+.main-logo {
+    width: 100%;
+    align-items: center;
+    /*border: 1px solid magenta; */
+}
+
+
+.main-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list-item {
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+    }
+
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: .25em 0;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+.nav-link-login {
+    background-color: #f28705;
+    font-family: "FreightSansProSemibold-Regular";
+    padding: .75em 1.75em;
+    margin-left: 1.5em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* Typography */
+
+h1 {
+    font-family: FreightDispProSemibold-Regular;
+    margin-top: 0;
+}
+
+.hero-title,
+.hero-subtitle{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hero-title,
+.hero-italic-text{
+    font-size: 3rem;
+}
+
+.hero-italic-text{
+
+    font-family: FreightDispProSemibold-Italic; 
+    font-weight: normal;
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+
+
+}
+
+.menu-semanal-title{
+    font-family: FreightDispProSemibold-Regular;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.menu-semanal-subtitle{
+    margin-top: .5em;
+
+}
+
+.product-title{
+    font-family: FreightDispProSemibold-Regular;
+    font-size: 1.125rem;
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+.product-subtitle{
+    margin-top: 0;
+}
+
+.product-price{
+    font-size: .85rem;
+}
+
+
+
+/* Buttons */
+
+.btn {
+    background-color: #f28705;
+    color: #fff;
+    font-family: "FreightSansProSemibold-Regular";
+    padding: .75em 1.75em;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn-hero {
+    margin-top: 2em;
+    justify-self: center;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+    background-color:#ec6702;
+    color: rgba(255, 255, 255, .9);
+}
+
+
+.hero{
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 250px) minmax(0px, 250px) minmax(1em, 1fr);
+    background-image: url(./img/hero-shot-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 12em 2em;
+}
+
+.hero > * {
+    grid-column: 2 / -2;
+}
+
+.menu-semanal{
+
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 200px) minmax(0px, 200px) minmax(1em, 1fr);
+    padding: 3em 0;
+    grid-column-gap: 1em;
+}
+
+.menu-semanal-title-section {
+    grid-column: 2 / -2;
+    text-align: center;
+
+}
+
+.product-img {
+    min-width: 120px;
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.col-1 {
+    grid-column: 2 / span 1;
+    padding-top: 1.5em;
+}
+
+.col-2 {
+    grid-column: 3 / span 1;
+    padding-top: 1.5em;
+}
+
+
